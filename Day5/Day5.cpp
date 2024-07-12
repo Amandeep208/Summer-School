@@ -59,24 +59,28 @@
 
 // Write program to create a class that restrict users to create multiple objects. (if user create multiple objects all the objects points to a same memory location.)
 
-#include<iostream>
-using namespace std;
-class A{
-    public:
-    string name; //Non static Data Member
-    void display();
-    static void show();
-};
-void Test::show(){
+// #include<iostream>
+// using namespace std;
+// class Test{
+//     public:
+//     static string clgname;
+//     string name = "Andy Smith"; //Non static Data Member
+//     void display();
+//     static void show();
+// };
+// string Test::clgname="MIET";
+// void Test::show(){
+//     cout<<clgname<<endl;
+//     Test ob;
+//     cout<<ob.name<<endl;
+// }
+// void Test::display(){
+//     cout<<clgname<<endl;
+//     cout<<name<<endl;
 
-}
-void display(){
-    
-}
-int main(){
-    A ob1,ob2,ob3;
-    cout<<ob1.name;    
-    cout<<ob1.name;    
-    cout<<ob1.name;    
-    return 0;
-}
+// }
+// int main(){
+//     Test ob1,ob2,ob3;
+
+//     return 0;
+// }
