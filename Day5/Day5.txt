@@ -137,3 +137,69 @@ Ans-->Copy constructor is a scpcial type of constructor that is used to copy the
 NOTE: If ypur class dosent contain any constructor then the compiler create default constructor in your class.
       If You Create a any constructor in a class in theat case the compiler never create default constructor.
       
+Write a Program such that only one object is allowed.
+--> to increment the value of count from 0 to 1 first time and if value becomes 1 it gives runtime error.
+
+#include<iostream>
+using namespace std;
+class A{
+    public:
+        static int val;
+        A();
+};
+int A::val=0;
+A::A(){
+    if (val==0){
+        val++;
+    }
+    else{
+        __throw_runtime_error("Can't Create Objects");
+    }
+
+}
+int main(){
+    A obj1,obj2,obj3,obj4;
+    cout<<obj1.val;
+    cout<<obj2.val;
+    cout<<obj3.val;
+    cout<<obj4.val;
+    return 0;
+}
+
+
+Que--> Write a Program such that dosenot allow to make object
+--> by making private constructor
+
+#include<iostream>
+using namespace std;
+class A{
+    private:
+        void A(){
+
+        }
+};
+int main(){
+    A obj;
+    return 0;
+}
+
+Que--> WAP to count how many objects of a class is created.
+--> by increamenting a static variable insinde constructor.
+
+#include<iostream>
+using namespace std;
+class A{
+    public:
+        static int val;
+        A();
+};
+int A::val=0;
+A::A(){
+    val++;
+
+}
+int main(){
+    A obj1,obj2,obj3,obj4;
+    cout<<obj3.val;
+    return 0;
+}
