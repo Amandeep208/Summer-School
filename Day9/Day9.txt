@@ -1,0 +1,43 @@
+Dynamic MEmory Allocation
+--> DMA is refers to preforming memory allocation by a mrogrammer.
+--> Dynamically allocate memory is allocated on Heap, and non static and local variables get memory allocated in stack.
+--> To preform dynamic allocation in C++ usinf function of C language like mallco(), Calloc() etc as well as they provide two operator new and delete,
+that preform the task of allocating and free in the memory in better and easy way.
+
+NEW OPERATOR:
+-->The new operator denotes a request for memory for memory allocation on the Free store. IF sufficent memory is available, a new operator initalize the 
+memory and returns the address of the newly allocated and initialize memory to the pointer 
+
+        Syntax: pointer-variable = new data-type;
+
+-->We can also use the operator to initialize value or create a memory block:
+
+        pointer-variable = new data-type(value)
+
+
+#include<iostream>
+using namespace std;
+
+int main(){
+    int *ptr = new int;  //initialiizing nwe pointer variable with data type int
+    *ptr = 100; // allocating value 100 to the pointer variable
+    cout<<*ptr<<endl; //printing value
+
+    int *ptr1 = new int[5]; // initializing an array
+    for (int i=0;i<5;i++){
+        cin>>ptr1[i];
+    }
+    for (int i=0;i<5;i++){
+        cout<<ptr1[i]<<"\t";
+    }
+    cout<<endl;
+    //another way of printing
+    for (int i=0;i<5;i++){
+        cout<<*(ptr1+i)<<"\t";
+    }
+    return 0;
+}
+
+if we are goint to preform increment and decrement on a pointer type of variable it is based on scale factor, (length of data type).
+
+-->After Deleting the poiner the pointer points to a location called as danging pointer.
