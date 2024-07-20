@@ -41,3 +41,126 @@ int main(){
 if we are goint to preform increment and decrement on a pointer type of variable it is based on scale factor, (length of data type).
 
 -->After Deleting the poiner the pointer points to a location called as danging pointer.
+
+STANDARD TEMPLATE LIBRARY (STL):
+
+It is a set of templates classes to provide 
+
+
+Containers: A container us an object that stores a com=llection of objects of a specific type. For example, if we need to store a list of names, we can use vector.
+C++  STL provides diffrent types of containers based on our requirements.
+
+
+                            Containers
+                                |
+                                |
+        ____________________________________________________
+        |                       |                           |
+        |                       |                           |
+        |                       |                           |
+    Sequential Containers  Associative Container  Container Adaptors
+        |                       |                           |
+        |                       |                           |
+      ->array                  ->set                      ->Stack
+      ->vector                 ->Multiset                 ->Queue
+      ->list                   ->Map
+      ->Deque                  ->Multimap
+
+
+Iterators: Iterators are those entites that helps in traversing through elemnts.
+           Iterators are used for working on the sequence of value.
+
+
+Algorithms: THe algorithms defines a collection of function specially designed to be used on a range of elements.
+            They are on containers and provide means of various operation for the contents of the container.
+         1. Sorting
+         2. Searching
+         3. Reverse
+
+VECTOR:
+
+-->Vector are used to store elements on similar data types.
+-->However, unlike arrays, the size of a vector can grow dynamically.
+-->To use vector, we need to include the vector header file in our program.
+
+Vector decleration Syntax:
+    vector<data_type> vector_name;
+
+Vector initialiizing Syntax:
+    vector<data_type>vector_name{initial_values};
+                    or
+    vector<data_type>vector_name = {initial_values};
+
+Example 1:
+
+
+#include<iostream>
+#include<vector>
+using namespace std;
+
+int main(){
+    int n;
+    cout<<"Enter Size of Array: ";
+    cin>>n;
+    vector<int> ob(n);
+    cout<<"Enter the value to the Vector Array: ";
+    for (int i = 0; i < n; i++)
+    {
+        cin>>ob[i];
+    }
+    for (int i = 0; i < n; i++)
+    {
+        cout<<ob[i]<<"\t";
+    }
+    
+    return 0;
+}
+
+Example 2: 
+#include<iostream>
+#include<vector>
+using namespace std;
+
+int main(){
+    int n;
+    cout<<"Enter Size of Array: ";
+    cin>>n;
+    vector<int> ob(n);
+    cout<<"Enter the value to the Vector Array: ";
+    for (int i = 0; i < n; i++)
+    {
+        cin>>ob[i];
+    }
+    for (int i = 0; i < n; i++)
+    {
+        cout<<ob[i]<<"\t";
+    }
+    
+    return 0;
+}
+
+
+Vector Functions:
+
+push_back(value): Adds an element to the end of the vector.
+pop_back(): Removes the last element of the vector.
+size(): REturns the number of elements in the vector.
+max_size(): Returns the maximum numbers of elements vector can hold.
+resize(new_size): changes the size of the vector.
+empty(): checks if the vectoris empty.
+at(): Access the elements at a specific position, with bounds checking.
+front(): Access the first element of the vector.
+back(): Access the last element of the vector.
+assign(int size, int value): assign new values to the vector elements by replacing old ones.
+insert(pos_Iteration,value): Insert element at a specific position in the vector.
+erase(pos_iterator): Removes the element at a particular position in the vector.
+swap(vector): swap the content of the vector with those of another vector.
+clear(): Removes the element from the vector.
+capacity(): Returns the size of storage space currently allocated to teh vector.
+shrink_to_fit(): Reduces memory usage in freeing unused space.
+data(): Returns a direct pointer to the menory array used internally by the vector to its owned elements
+begin(): Returns an iterator pointing to the first element of the container.
+end(): returns an iterator pointing to the past-the-last element of the container.
+rbegin(): Returns an iterator pointing to the last element of the container.
+rend(): returns an iterator pointing to the pre-the-first element of the container.
+
