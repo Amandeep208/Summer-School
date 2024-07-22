@@ -144,7 +144,7 @@ Vector Functions:
 
 push_back(value): Adds an element to the end of the vector.
 pop_back(): Removes the last element of the vector.
-size(): REturns the number of elements in the vector.
+size(): Returns the number of elements in the vector.
 max_size(): Returns the maximum numbers of elements vector can hold.
 resize(new_size): changes the size of the vector.
 empty(): checks if the vectoris empty.
