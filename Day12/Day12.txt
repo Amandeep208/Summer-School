@@ -1,0 +1,19 @@
+Stacks in  C++
+
+Functions in Stack:
+1. bool empty(): returns weather the stack is empty or not.
+2. int size(): returns the size of the stack.
+3. push(value): Adds the element at the top of the stack.
+4. top(): REturns the top most element of the stack.
+5. pop(): Delete the top mos element from the stack.
+6. swap(stack): Swap the content of one stack with another stack.
+
+Queue in c++
+
+Functions in Queue.
+1. push(): inserting an element at the end of the queue.
+2. pop(): Removes the element from the front of the queue.
+3. front(): returns the first element of the Queue.
+4. back(): retturns the last element from the Queue.
+5. size(): returns the suze of the Queue.
+6. empty(): returns true if the queue is empty.
