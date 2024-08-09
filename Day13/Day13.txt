@@ -1,0 +1,52 @@
+Trees (A non Linear Data Stucture)
+
+->A tree is a  hierarchical stucture that is used to represent and organise data in away that is easy to navigate and search.
+->It is a collection of nodes that are connected by edges and has a hierarchical relationship between the nodes.
+
+Tree Terminologies:
+1. Node: Each element is a tree is known as node.
+2. Edge: Connection between two nodes.
+3. Root: Root is the pointer that store Starting point of a particular node.
+4. Parent Node: Immediate predicessor of a node   555 called a parent Node.
+5. Child Node: Immediate Succesor of a node are called a child node.
+6. Degree of a Node: Number of Children of that node is known as a degree of that node.
+7. Degree of a Tree: The node with the highest degree.
+8. Terminal Node/leaf Node: Node having Degree zero.
+9. Non-Terminal Node/Non Leaf Node: Node having degree greater than zero.
+10. Height of Node: No. of edges from the leaf node to that particulat node.
+11. Height of Tree: The Max height of any node in the given tree.
+12. Siblings: Nodes with same Parent.
+13. Level
+
+
+TREE NODE:
+
+                  NODE
+                   |
+                   |
+                   |
+  _____________________________________
+ |                 |                   |
+ |                 |                   |
+ LEFT              DATA               RIGHT     
+
+Types of Tree:
+1. Binary Tree.
+2. Binary Search Tree
+3. AVL Tree
+4. B Tree
+
+-->Binary Tree: 
+->Binary tree is a special types of data stucture.
+->In binary tree, every node can a maximum of 2 childrens, which are known as eft child and Right Child.
+
+Types of Binary Tree:
+1. Full Binary Tree: A binary tree is full if every node has 0 or 2 child.
+2. Complete Binary Tree: A Binary Tree is complete binary tree if all levels are completely filled except possible the last level and the last level has all keys as left possible.
+3. Perfect Binary Tree: A Tree in which all internal nodes has tow children and all leaves are at same level
+
+
+--> Binary Search Tree:
+-> Every node should have unique key
+-> The key in the left lode should be less than the parent key.
+-> The key in the right node should be greater than the parent key.
